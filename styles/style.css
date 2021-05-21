@@ -66,6 +66,10 @@ body {
   border-radius: 10px;
 }
 
+.gold {
+  color: #7a7609;
+}
+
 .top__img {
   width: 100vw;
   -o-object-fit: contain;

@@ -55,6 +55,13 @@ body {
   color: $cGold;
 }
 
+.container {
+  position: relative;
+  background-color: $cWhite;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
 .header {
   position: fixed;
   top: 0;

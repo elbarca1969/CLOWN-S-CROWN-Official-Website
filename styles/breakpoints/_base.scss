@@ -43,7 +43,7 @@ body {
 .content-width {
   width: 90%;
   margin: 0 auto;
-  max-width: 1150px;
+  max-width: $contentMaxWidth;
 }
 .letter-spacing {
   letter-spacing: 5px;

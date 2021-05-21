@@ -55,6 +55,31 @@ body {
   color: $cGold;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: $cWhite;
+  display: flex;
+  align-items: center;
+  z-index: 90;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend .content-width;
+  }
+
+  &__logo {
+    & > a > img {
+      height: 45px;
+    }
+  }
+}
+
 .top {
   &__img {
     width: 100vw;

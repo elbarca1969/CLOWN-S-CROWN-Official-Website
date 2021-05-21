@@ -147,6 +147,18 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .top {
+    position: relative;
+  }
+  .top .introduction {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    width: 500px;
+  }
+  .top .introduction__description {
+    font-size: 13px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

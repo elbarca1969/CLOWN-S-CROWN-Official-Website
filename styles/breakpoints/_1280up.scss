@@ -3,3 +3,18 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+
+.top {
+  position: relative;
+
+  & .introduction {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    width: 500px;
+    
+    &__description {
+      font-size: 13px;
+    }
+  }
+}

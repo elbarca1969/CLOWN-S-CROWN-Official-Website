@@ -62,3 +62,21 @@ body {
     vertical-align: bottom;
   }
 }
+
+.introduction {
+  @extend .content-width;
+  @extend .mt-sm;
+  
+  &__inner {
+    @extend .radius;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 550;
+    @extend .letter-spacing;
+    padding: 20px 0;
+  }
+}

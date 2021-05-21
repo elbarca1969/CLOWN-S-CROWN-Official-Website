@@ -32,7 +32,7 @@ body {
   margin-bottom: 80px !important;
 }
 
-.mt-sm {
+.mt-sm, .introduction {
   margin-top: 16px !important;
 }
 
@@ -52,17 +52,17 @@ body {
   padding: 50px 0;
 }
 
-.content-width {
+.content-width, .introduction {
   width: 90%;
   margin: 0 auto;
   max-width: 1150px;
 }
 
-.letter-spacing {
+.letter-spacing, .introduction__title {
   letter-spacing: 5px;
 }
 
-.radius {
+.radius, .introduction__inner {
   border-radius: 10px;
 }
 
@@ -75,6 +75,17 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   vertical-align: bottom;
+}
+
+.introduction__inner {
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.introduction__title {
+  font-size: 30px;
+  font-weight: 550;
+  padding: 20px 0;
 }
 
 @media (min-width: 480px) {
@@ -119,7 +130,7 @@ Stylesheet: 960px以上のモニタで適用
   .mb-lg {
     margin-bottom: 150px !important;
   }
-  .mt-sm {
+  .mt-sm, .introduction {
     margin-top: 60px !important;
   }
   .mt-lg {

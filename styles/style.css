@@ -281,6 +281,10 @@ body {
   height: 45px;
 }
 
+.header__nav {
+  display: none;
+}
+
 .header__ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,6 +373,12 @@ Stylesheet: 960px以上のモニタで適用
   }
   .pb-lg {
     padding-bottom: 150px !important;
+  }
+  .header__nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
   }
 }
 

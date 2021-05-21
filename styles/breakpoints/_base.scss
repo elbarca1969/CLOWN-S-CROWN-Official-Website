@@ -86,6 +86,10 @@ body {
     }
   }
 
+  &__nav {
+    display: none;
+  }
+
   &__ul {
     display: flex;
     padding: 0;

@@ -6,7 +6,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 .top {
   &__img {
-    height: 100vh;
+    height: calc(100vh - 65px);
     object-fit: cover;
   }
 }

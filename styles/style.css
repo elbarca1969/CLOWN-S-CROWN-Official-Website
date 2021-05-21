@@ -103,6 +103,7 @@ body {
 }
 
 .top__img {
+  margin-top: 65px;
   width: 100vw;
   -o-object-fit: contain;
      object-fit: contain;
@@ -135,7 +136,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
   .top__img {
-    height: 100vh;
+    height: calc(100vh - 65px);
     -o-object-fit: cover;
        object-fit: cover;
   }

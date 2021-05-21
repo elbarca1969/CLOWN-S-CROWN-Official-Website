@@ -104,6 +104,28 @@ body {
       display: inline-block;
       color: $cBlack;
       text-decoration: none;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $cGold;
+        transition: transform 0.3s;
+        transform: scale(0, 1);
+        transform-origin: left top;
+      }
+      
+      &:hover {
+        color: $cGold;
+
+        &::after {
+          transform: scale(1, 1);
+        }
+      }
     }
   }
 }

@@ -156,3 +156,20 @@ body {
     padding: 20px 0;
   }
 }
+
+.main-title {
+  font-weight: 600;
+  @extend .letter-spacing;
+}
+
+.member {
+  @extend .pbt;
+
+  & .main-title {
+    width: 200px;
+    color: $cWhite;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 50px;
+  }
+}

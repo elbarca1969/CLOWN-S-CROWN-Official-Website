@@ -247,7 +247,7 @@ body {
   padding-bottom: 80px !important;
 }
 
-.pbt {
+.pbt, .member {
   padding: 50px 0;
 }
 
@@ -257,7 +257,7 @@ body {
   max-width: 1150px;
 }
 
-.letter-spacing, .introduction__title {
+.letter-spacing, .introduction__title, .main-title {
   letter-spacing: 5px;
 }
 
@@ -379,6 +379,18 @@ body {
   padding: 20px 0;
 }
 
+.main-title {
+  font-weight: 600;
+}
+
+.member .main-title {
+  width: 200px;
+  color: white;
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 50px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -435,6 +447,11 @@ Stylesheet: 960px以上のモニタで適用
   }
   .mobile-menu__btn {
     display: none;
+  }
+  .member__header {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1150px;
   }
 }
 

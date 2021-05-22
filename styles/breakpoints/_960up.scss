@@ -47,4 +47,8 @@ Stylesheet: 960px以上のモニタで適用
     margin: 0 auto;
     max-width: $contentMaxWidth;
   }
+
+  &__item {
+    flex-basis: 24%;
+  }
 }

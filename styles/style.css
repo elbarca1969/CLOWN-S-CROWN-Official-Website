@@ -211,7 +211,7 @@ body {
   font-size: 14px;
 }
 
-.font-md {
+.font-md, .member__name {
   font-size: 17px;
 }
 
@@ -223,7 +223,7 @@ body {
   font-size: 30px;
 }
 
-.mb-sm {
+.mb-sm, .member__item, .member__img {
   margin-bottom: 16px !important;
 }
 
@@ -251,7 +251,7 @@ body {
   padding: 50px 0;
 }
 
-.content-width, .header__inner, .introduction {
+.content-width, .header__inner, .introduction, .member__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1150px;
@@ -261,12 +261,27 @@ body {
   letter-spacing: 5px;
 }
 
-.radius, .introduction__inner {
+.radius, .introduction__inner, .member__img {
   border-radius: 10px;
 }
 
 .gold {
   color: #7a7609;
+}
+
+.flex, .member__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container {
@@ -391,6 +406,34 @@ body {
   margin-top: 50px;
 }
 
+.member__item {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.member__img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.member__img .img-zoom {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30% 0;
+     object-position: 30% 0;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.member__name {
+  font-weight: 600;
+  text-align: center;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -421,7 +464,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-sm {
     font-size: 16px;
   }
-  .font-md {
+  .font-md, .member__name {
     font-size: 19px;
   }
   .font-lr {

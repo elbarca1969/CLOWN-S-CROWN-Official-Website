@@ -54,6 +54,12 @@ body {
 .gold {
   color: $cGold;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .container {
   position: relative;
@@ -171,5 +177,36 @@ body {
     background-color: lightblue;
     text-align: center;
     margin-top: 50px;
+  }
+  
+  &__inner {
+    @extend .content-width;
+    @extend .flex;
+  }
+
+  &__item {
+    flex-basis: 48%;
+    @extend .mb-sm;
+  }
+  
+  &__img {
+    overflow: hidden;
+    @extend .radius;
+    @extend .mb-sm;
+    cursor: pointer;
+    
+    & .img-zoom {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 30% 0;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__name {
+    @extend .font-md;
+    font-weight: 600;
+    text-align: center;
   }
 }

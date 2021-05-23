@@ -238,6 +238,8 @@ body {
 
   &__inner {
     @extend .content-width;
+    display: flex;
+    flex-direction: column;
   }
 
   &__img {
@@ -249,4 +251,28 @@ body {
     }
   }
 
+  &__title {
+    font-family: 'Yusei Magic', sans-serif;
+    @extend .font-lg;
+    font-weight: 600;
+    color: #FF6928;
+  }
+
+  &__sub {
+    @extend .font-lr;
+    font-weight: 600;
+    @extend .mb-sm;
+  }
+
+  &__description {
+    @extend .mb-sm;
+
+    & > p {
+      margin: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

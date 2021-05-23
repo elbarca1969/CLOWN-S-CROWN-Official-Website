@@ -443,6 +443,21 @@ body {
   background-color: #EEEEEE;
 }
 
+.release__header {
+  position: relative;
+  overflow: hidden;
+}
+
+.release__header span {
+  position: absolute;
+  top: 35%;
+  left: 180px;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#92fe9d), to(#00c9ff));
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 

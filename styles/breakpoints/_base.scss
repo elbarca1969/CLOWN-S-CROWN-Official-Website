@@ -221,5 +221,18 @@ body {
 
   &__header {
     @extend .content-width;
+    //横線
+    position: relative;
+    overflow: hidden;
+
+    & span {
+      position: absolute;
+      top: 35%;
+      left: 180px;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    }
+    //横線
   }
 }

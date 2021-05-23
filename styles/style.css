@@ -512,6 +512,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .release__inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .release__texts, .release__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
 }
 
 @media (min-width: 960px) {

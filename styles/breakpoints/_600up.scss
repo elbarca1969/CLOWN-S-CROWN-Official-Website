@@ -10,3 +10,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     object-fit: cover;
   }
 }
+
+.release {
+  &__inner {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__texts,
+  &__img {
+    flex-basis: 47%;
+  }
+}

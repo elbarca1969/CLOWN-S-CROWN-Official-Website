@@ -18,3 +18,9 @@ Stylesheet: 1280px以上のモニタで適用
     }
   }
 }
+
+.release {
+  &__inner {
+    padding: 0 150px;
+  }
+}

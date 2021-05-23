@@ -594,6 +594,9 @@ Stylesheet: 1280px以上のモニタで適用
   .top .introduction__description {
     font-size: 13px;
   }
+  .release__inner {
+    padding: 0 150px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

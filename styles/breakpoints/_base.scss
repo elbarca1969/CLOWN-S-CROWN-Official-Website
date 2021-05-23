@@ -235,4 +235,18 @@ body {
     }
     //横線
   }
+
+  &__inner {
+    @extend .content-width;
+  }
+
+  &__img {
+    @extend .mb-sm;
+    & > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 }

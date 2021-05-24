@@ -646,6 +646,10 @@ Stylesheet: 1280px以上のモニタで適用
   .release__inner {
     padding: 0 150px;
   }
+  .video__youtube {
+    width: 80%;
+    padding-top: 45%;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

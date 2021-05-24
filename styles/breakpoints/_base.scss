@@ -279,11 +279,24 @@ body {
 
 .video {
   @extend .pbt;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(100deg, red, magenta);
+    transform: skewX(-30deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
 
   &__header {
     padding-top: 50px;
     @extend .content-width;
     @extend .mb-sm;
+    color: $cWhite
   }
 
   &__inner {

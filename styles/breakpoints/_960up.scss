@@ -52,3 +52,10 @@ Stylesheet: 960px以上のモニタで適用
     flex-basis: 24%;
   }
 }
+
+.video {
+  &::before {
+    width: 600px;
+    height: 300px;
+  }
+}

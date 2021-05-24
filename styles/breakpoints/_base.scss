@@ -358,4 +358,11 @@ body {
       cursor: pointer;
     }
   }
+
+  &__copyright {
+    margin-top: 100px;
+    color: $cGray;
+    text-align: center;
+    @extend .font-sm;
+  }
 }

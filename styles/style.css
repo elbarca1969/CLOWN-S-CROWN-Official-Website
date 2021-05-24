@@ -229,7 +229,7 @@ body {
   font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif;
 }
 
-.font-sm {
+.font-sm, .footer__copyright {
   font-size: 14px;
 }
 
@@ -603,6 +603,12 @@ body {
   cursor: pointer;
 }
 
+.footer__copyright {
+  margin-top: 100px;
+  color: #535353;
+  text-align: center;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -645,7 +651,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm {
+  .font-sm, .footer__copyright {
     font-size: 16px;
   }
   .font-md, .member__name {

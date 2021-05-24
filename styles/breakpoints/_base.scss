@@ -285,4 +285,24 @@ body {
     @extend .content-width;
     @extend .mb-sm;
   }
+
+  &__inner {
+    @extend .content-width;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+    & iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

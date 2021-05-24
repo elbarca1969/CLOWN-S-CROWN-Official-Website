@@ -319,3 +319,16 @@ body {
     }
   }
 }
+
+.footer {
+  @extend .pbt;
+  
+  &__header {
+    padding: 80px 0 20px;
+    @extend .content-width;
+
+    & .main-title {
+      text-align: center;
+    }
+  }
+}

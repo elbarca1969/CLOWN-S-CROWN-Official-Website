@@ -245,7 +245,7 @@ body {
   font-size: 30px;
 }
 
-.mb-sm, .member__item, .member__img, .release__img, .release__sub, .release__description {
+.mb-sm, .member__item, .member__img, .release__img, .release__sub, .release__description, .video__header {
   margin-bottom: 16px !important;
 }
 
@@ -269,11 +269,11 @@ body {
   padding-bottom: 80px !important;
 }
 
-.pbt, .member, .release {
+.pbt, .member, .release, .video {
   padding: 50px 0;
 }
 
-.content-width, .header__inner, .introduction, .member__inner, .release__header, .release__inner {
+.content-width, .header__inner, .introduction, .member__inner, .release__header, .release__inner, .video__header {
   width: 90%;
   margin: 0 auto;
   max-width: 1150px;
@@ -513,6 +513,10 @@ body {
 
 .release__description > p:nth-child(1) {
   margin-bottom: 10px;
+}
+
+.video__header {
+  padding-top: 50px;
 }
 
 @media (min-width: 480px) {

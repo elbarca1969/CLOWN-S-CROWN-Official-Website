@@ -276,3 +276,13 @@ body {
     }
   }
 }
+
+.video {
+  @extend .pbt;
+
+  &__header {
+    padding-top: 50px;
+    @extend .content-width;
+    @extend .mb-sm;
+  }
+}

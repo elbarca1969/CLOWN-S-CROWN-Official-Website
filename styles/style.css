@@ -220,6 +220,44 @@
           box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
+.item {
+  opacity: 0;
+}
+
+.item.inview {
+  opacity: 1;
+  -webkit-animation: item-animation;
+          animation: item-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes item-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes item-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /******************************************************************
 
 Stylesheet: ベーススタイル
